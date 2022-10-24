@@ -1,0 +1,42 @@
+Nioata Alexandra
+312CAa
+
+Tema 2 - Interpolare aplicata pe imagini
+
+In aceasta tema, sunt prezentate 3 metode de interpolari aplicate pe imagini. Interpolarea se refera la obtinerea unor valori intermediare aproximative ale unei functii pentru care se stiu doar o parte din valori.
+Cele trei metode folosite sunt:
+- Interpolare bicubica
+- Interpolare proximala
+- Interpolare Lanczos
+
+Primele 2 cerinte au propriul checker, adica in directorul cu numele aferent poti rula checkerul doar pentru interpolarea data, pentru a verifica daca e corecta sau nu.
+
+I. Interpolare Bicubica
+- bicubic_coef: calculeaza pentru 4 puncte care sunt unele langa altele coeficientii de interpolare bicubica
+- fx: calculeaza cu aproximatie derivata unei functii f fata de x
+- fy: calculeaza cu aproximatie derivata unei functii f fata de y
+- fxy: calculeaza cu aproximatie derivata unei functii f fata de x si de y
+- precalc_d: sunt precalculate cele 3 matrici Ix, Iy si Ixy, care contin derivatele dx, dy, respectiv  dxy ale imaginii I, pentru fiecare pixel al acesteia
+- bicubic_resize: redimensioneaza imaginea alb-negru de dimensiune mxn intr-o imagine cu dimensiunea pxq. se foloseste de functiile precalc_d si bicubic_coef
+- bicubic_resize_RGB: redimensioneaza imaginea colorata, RGB, de dimensiune mxn intr-o imagine cu dimensiunea pxq, se foloseste de functia bicubic_resize.
+
+II. Interpolare Proximala
+- proximal_2x2: aplica interpolarea proximala pe o imagine alb-negru 2x2
+- proximal_2x2_RGB: aplica interpolarea proximala pe o imagina colorata RGB 2x2
+- proximal_coef: calculeaza coeficientii pentru interpolarea proximala
+- proximal_resize: redimensioneaza imaginea alb-negru de dimensiune mxn intr-o imagine cu dimensiunea pxq.
+- proximal_resize_RGB: redimensioneaza imaginea colorata, RGB, de dimensiune mxn intr-o imagine cu dimensiunea pxq, se foloseste de functia proximal resize
+- proximal_rotate: aplica interpolarea proximala pe o imagine alb-negru de dimensiune mxn cu unghiul rotation angle, aproximat in radiani.
+- proximal_rotate_RGB: aplica interpolarea proximala pe o imagine colorata, RGB, de dimensiune mxn cu unghiul rotation angle, aproximat in radiani, si se foloseste de functia proximal_rotate
+
+III. Interpolare Lanczos 
+- nonsym-Lanczos: algoritmul Standard Block Lanczos, care e o versiune stabila a algoritmului
+- Rational_Block-Lanczos: se construiesc bazele biortonormale ale uniunii subspatiilor bloc Krylov.
+- AORBL: se foloseste de algoritmul Rational Block Lanczos, se construieste  urmatorul punct de interpolare la fiecare pas si se bazeaza pe ideea ca deplasarile trebuie selectate astfel incat norma de aproximare a erorilor trebuie sa fie minimizata la fiecare iteratie
+
+Feedback:
+- tema a fost bine exemplificata prin imagini si explicari foarte clare
+- checker-ul de la primele 2 task-uri a fost foart helpful
+- primele 2 task-uri au avut la fiecare functie TO DO-uri, care m-au ajutat foarte mult.
+- al treilea task a fost putin mai greu, datorita faptului ca algoritmul Lanczos este destul de dificil de inteles, dar explicatiile care au fost in numar destul de mare au fost destul de ok
+- algoritmul din pdf-ul dat a ajutat, dar si acela mi s-a parut destul de greu de inteles.
