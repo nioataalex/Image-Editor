@@ -1,7 +1,4 @@
-Nioata Alexandra
-312CAa
-
-Tema 2 - Interpolare aplicata pe imagini
+Interpolare aplicata pe imagini
 
 In aceasta tema, sunt prezentate 3 metode de interpolari aplicate pe imagini. Interpolarea se refera la obtinerea unor valori intermediare aproximative ale unei functii pentru care se stiu doar o parte din valori.
 Cele trei metode folosite sunt:
@@ -34,9 +31,3 @@ III. Interpolare Lanczos
 - Rational_Block-Lanczos: se construiesc bazele biortonormale ale uniunii subspatiilor bloc Krylov.
 - AORBL: se foloseste de algoritmul Rational Block Lanczos, se construieste  urmatorul punct de interpolare la fiecare pas si se bazeaza pe ideea ca deplasarile trebuie selectate astfel incat norma de aproximare a erorilor trebuie sa fie minimizata la fiecare iteratie
 
-Feedback:
-- tema a fost bine exemplificata prin imagini si explicari foarte clare
-- checker-ul de la primele 2 task-uri a fost foart helpful
-- primele 2 task-uri au avut la fiecare functie TO DO-uri, care m-au ajutat foarte mult.
-- al treilea task a fost putin mai greu, datorita faptului ca algoritmul Lanczos este destul de dificil de inteles, dar explicatiile care au fost in numar destul de mare au fost destul de ok
-- algoritmul din pdf-ul dat a ajutat, dar si acela mi s-a parut destul de greu de inteles.
